@@ -48,8 +48,8 @@ class PCA9554A(i2c.I2C):
         return pin_state
 
 # wifi details
-wifi_ssid = "XinaBox"
-wifi_pass = "RapidIoT"
+wifi_ssid = "username"
+wifi_pass = "password"
 wifi_secu = wifi.WIFI_WPA2
 
 # rgb pins
@@ -61,8 +61,8 @@ BLUE = D27
 streams.serial()
 
 # wolkabout project details
-device_key = "e31d96hrvds4b32p"
-device_password = "8e2389b6-c93b-45ed-84a1-232329f5705f"
+device_key = "device key"
+device_password = "device password"
 actuator_references = ["R"]
 
 # rgb pins set as output

@@ -1,0 +1,109 @@
+{
+	"id": 498,
+	"name": "OC03_SW01",
+	"protocol": "JsonSingleReferenceProtocol",
+	"description": "relay control and environmental monitoring",
+	"published": false,
+	"feeds": [{
+		"id": 863,
+		"name": "Temperature",
+		"reference": "T",
+		"description": "",
+		"unit": {
+			"id": 31,
+			"name": "CELSIUS",
+			"symbol": "℃",
+			"readingTypeId": 2,
+			"system": "SI",
+			"context": null,
+			"inUse": true
+		},
+		"minimum": -40,
+		"maximum": 85,
+		"readingType": {
+			"id": 2,
+			"name": "TEMPERATURE",
+			"dataType": "NUMERIC",
+			"size": 1,
+			"precision": 1,
+			"labels": null
+		}
+	}, {
+		"id": 864,
+		"name": "Humidity",
+		"reference": "H",
+		"description": "",
+		"unit": {
+			"id": 124,
+			"name": "HUMIDITY_PERCENT",
+			"symbol": "%",
+			"readingTypeId": 4,
+			"system": "NON_SI",
+			"context": null,
+			"inUse": true
+		},
+		"minimum": 0,
+		"maximum": 100,
+		"readingType": {
+			"id": 4,
+			"name": "HUMIDITY",
+			"dataType": "NUMERIC",
+			"size": 1,
+			"precision": 1,
+			"labels": null
+		}
+	}, {
+		"id": 865,
+		"name": "Pressure",
+		"reference": "P",
+		"description": "",
+		"unit": {
+			"id": 167,
+			"name": "hectopascal",
+			"symbol": "hPa",
+			"readingTypeId": 3,
+			"system": "CUSTOM",
+			"context": 382,
+			"inUse": true
+		},
+		"minimum": 100000,
+		"maximum": 104000,
+		"readingType": {
+			"id": 3,
+			"name": "PRESSURE",
+			"dataType": "NUMERIC",
+			"size": 1,
+			"precision": 1,
+			"labels": null
+		}
+	}],
+	"actuators": [{
+		"id": 522,
+		"name": "Relay",
+		"reference": "R",
+		"description": "",
+		"unit": {
+			"id": 145,
+			"name": "BOOLEAN(ACTUATOR)",
+			"symbol": null,
+			"readingTypeId": 31,
+			"system": "CUSTOM",
+			"context": null,
+			"inUse": true
+		},
+		"minimum": 0,
+		"maximum": 1,
+		"readingType": {
+			"id": 31,
+			"name": "SWITCH(ACTUATOR)",
+			"dataType": "BOOLEAN",
+			"size": 1,
+			"precision": 1,
+			"labels": null
+		}
+	}],
+	"alarms": [],
+	"configs": [],
+	"inUse": false,
+	"generallyAvailable": false
+}
